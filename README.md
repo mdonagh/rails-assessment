@@ -1,4 +1,4 @@
-**ActiveSupport::Concern*
+**ActiveSupport::Concern**
 
 This shouldn't be here, because the ItemsController is pretty obviously a **controller**. Including `ActiveSupport::Concern` easily allows you to include that module as a mixin in another class using a syntax like `include Emailable`. Concerns are used like that to share methods between classes or to abstract business logic. I can't imagine anyone doing this with a controller.
 
