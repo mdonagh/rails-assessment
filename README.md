@@ -12,7 +12,7 @@ I've seen people using Raw SQL instead of Active Record queries in old legacy Ra
 
 I took out the `.order(name: :asc)` because typically searching by ID should only return a single record. 
 
-Changed the `@@` to `@` because that is how instance variables are passed by the controller to the view, two at signs would only used for class-level variables in PORO's or Concerns. 
+Changed the `@@` to `@` because that is how instance variables are passed by the controller to the view, `@@` is only used for class-level variables in PORO's or Concerns, which isn't relevant here.
 
 **#create**
 
