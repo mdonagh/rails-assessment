@@ -4,7 +4,7 @@ This shouldn't be here, because the ItemsController is pretty obviously a **cont
 
 **#index**
 
-Converting the result of the item array to a query doesn't accomplish anything, and actually will prevent us from being able to use any Active Record Result methods, like model associations, in the view. 
+Converting the result of the item array to an array with `to_a` doesn't accomplish anything, and actually will prevent us from being able to use any Active Record Result methods, like model associations, in the view. 
 
 **#show**
 
