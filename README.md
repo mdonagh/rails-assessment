@@ -8,7 +8,7 @@ Converting the result of the item array to an array with `to_a` doesn't accompli
 
 **#show**
 
-I've seen people using Raw SQL instead of Active Record queries in extremely old legacy code but I think it's fair to assume we don't have to do that anymore.
+I've seen people using Raw SQL instead of Active Record queries in old legacy Rails apps, but I think it's fair to assume we don't have to do that anymore. ActiveRecord queries are easier to read and update than raw SQL.
 
 I took out the `.order(name: :asc)` because typically searching by ID should only return a single record. 
 
